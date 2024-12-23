@@ -73,3 +73,8 @@ openssl x509 -req \
 	-days 365 \
 	-sha256 -extfile cert.conf
 `
+
+## Usage
+
+Add the server certificate to your reverse proxy such as Nginx Proxy Manager or Traefik
+Add the root certificate to your browser/os certificate repo for them to trust any server certificates presented as signed by the root certificate authority
